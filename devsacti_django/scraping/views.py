@@ -16,7 +16,7 @@ def makeurls(basic_url,pages):
     return urls
 
 def getNaverstock():
-    connect = sqlite3.connect('../db.sqlite3')
+    connect = sqlite3.connect('./db.sqlite3')
     c = connect.cursor()
 
     # 간단한 구현을 위한 테이블 존재 시 삭제
